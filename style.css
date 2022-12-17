@@ -1,7 +1,12 @@
 p {
-    color: red;
-    font-size: 2rem; /*2x16(domyslnie) = 32*/
-    background-color: gray;
-    border: 1px solid blue;
-    text-align: center;
+  color: red;
+  font-size: 2rem; /*2x16(domyslnie) = 32*/
+  background-color: gray;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+p:hover {
+  color: green;
+  font-size: 3rem;
 }
