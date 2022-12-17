@@ -47,8 +47,15 @@
           min="1"
           max="5"
         />
-
-        <input type="submit" id="sendForm" name="sendForm" value="Wyslij" />
+        <br />
+        <div class="file">
+          <label for="getfile">
+            Wybierz plik z dysku:
+            </label>
+          <input type="file" id="getfile" name="getfile" />
+          <br />
+          <input type="submit" id="sendForm" name="sendForm" value="Wyslij" required />
+        </div>
       </form>
     </div>
   </body>
