@@ -6,7 +6,11 @@ p {
   text-align: center;
 }
 
-p:hover {
+label {
   color: green;
-  font-size: 3rem;
+}
+
+input[type="text"] {
+  background-color: yellow;
+  border-radius: 3px;
 }
