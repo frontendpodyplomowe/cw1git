@@ -13,6 +13,29 @@ label {
 input[type="text"] {
   border-radius: 3px;
 }
+
+input[type="submit"] {
+  margin: 1rem;
+  padding: 0.3rem 2.5rem;
+  border: none;
+  background-color: darkcyan;
+  color: ivory;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+input[type="submit"]:hover {
+  background-color: chocolate;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transform: scale(1.2, 1.2);
+  letter-spacing: 0.5rem;
+}
+
+input[type="submit"]:active {
+  background-color: turquoise;
+  color: black;
+
 option{
   color: darkgray;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -170,10 +193,6 @@ input[type=submit] {
   padding: 10px 30px;
   transition: 0.5s;
 }
-
-input[type=submit]:hover {
-  color: white;
-  background-color: orange;
 
 form{
   width: 300px;
