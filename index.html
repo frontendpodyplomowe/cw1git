@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cw1 z gitem</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="box">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cw1 z gitem</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/925adc8089.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <div class="box">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -22,48 +26,104 @@
         <li></li>
       </ul>
     </div>
-    <div class="header1">
-      <p>Cwiczenia z gitem - praca z formularzem</p>
-    </div>
+  <div class="header1">
+    <p>Cwiczenia z gitem - praca z formularzem</p>
+  </div>
 
-    <div class="form1">
-      <form>
-        <label class="description" id="title1" for="field1">
-          Podaj nazwę uzytkownika:
-        </label>
-        <input type="text" id="field1" name="field1" placeholder="Wpisz imię" />
-        <br />
-        <label class="description" id="title2" for="field2">
-          Podaj swoje hasło:
-        </label>
+  <div class="form1">
+    <form>
+      <label class="description" id="title1" for="field1">
+
+        Podaj nazwę uzytkownika:<i class="fa-solid fa-person"></i>
+      </label>
+      <input type="text" id="field1" name="field1" placeholder="Wpisz imię" />
+      <br />
+      <label class="description" id="title2" for="field2">
+        Podaj swoje hasło:<i class="fa-solid fa-lock"></i>
+      </label>
+      <input type="password" id="field2" name="field2" title="Minimum 8 znakow, jedna cyfra i jeden znak specjalny"
+        placeholder="Wpisz hasło" />
+      <br />
+      <label class="description" id="title3" for="field3">
+        Podaj swój email:<i class="fa-solid fa-envelope"></i>
+      </label>
+      <input type="email" id="field3" name="field3" required />
+      <br>
+       <label class="description" id="title5" for="field5"
+          >Podaj swój numer telefonu:</label
+        >
         <input
-          type="password"
-          id="field2"
-          name="field2"
-          title="Minimum 8 znakow, jedna cyfra i jeden znak specjalny"
-          placeholder="Wpisz hasło"
+          type="tel"
+          id="field5"
+          name="field5"
+          placeholder="123-545-678"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          required
         />
-        <br />
-        <label class="description" id="title3" for="field3">
-          Podaj swój email:
-        </label>
-        <input type="email" id="field3" name="field3" required />
+      <br />
+      <label class="description" id="title4" for="field4">
+        Ile masz lat doświadczenia?<i class="fa-solid fa-calendar-days"></i>
+      </label>
+      <input type="number" id="field4" name="field4" value="3" min="1" max="5" />
 
-        <br />
-        <label class="description" id="title4" for="field4">
-          Ile masz lat doświadczenia?
-        </label>
-        <input
-          type="number"
-          id="field4"
-          name="field4"
-          value="3"
-          min="1"
-          max="5"
-        />
+      <div class="file">
+          <label for="getfile">
+            Wybierz plik z dysku:
+            </label>
+          <input class="inputfile" type="file" id="getfile" name="getfile" />
+          <br />
+      </div>
+       <br />
+        <label class="description" id="title5">Wybierz płeć:</label>
 
+        <input type="radio" id="radio1" name="radio" value="K" />
+        <label for="radio1">Kobieta</label>
+
+        <input type="radio" id="radio2" name="radio" value="M" />
+        <label for="radio2">Mężczyzna</label>
+
+        <input type="radio" id="radio3" name="radio" value="X" />
+        <label for="radio3">Wolę nie podawać</label>
+        
+        <br />
+        <label class="description" id="title-color" for="field-color">
+          Wybierz kolor profilu:
+        </label>
+         <input type="color" id="field-color" name="field-color" value="#000" />
+        <br />
+        
+    
+        <br>
+        <label for="field5" id="title5">Napisz co chciałbyś dostać na święta:</label>
+        <br>
+        <textarea name="field5" id="field5" cols="40" rows="10">Drogi Święty Mikołaju,&#013;</textarea>
+        <br>
         <input type="submit" id="sendForm" name="sendForm" value="Wyslij" />
-      </form>
+        
+        <br>
+        <label class="description" id="date1" for="date1">Data rozpoczęcia pracy</label>
+        <input type="date"> <br>
+        <label class="description" id="time1" for="time1">Godzina rozpoczęcia pracy</label>
+        <input type="time"> <br>
+        <br>
+        <label class="combo-box" id="title5" for="jobs">
+          Wybierz pozycje:
+        </label>
+        <select name="jobs" id="jobs">
+          <option value=""></option>
+          <option value="frontend">Front End</option>
+          <option value="backend">Back End</option>
+          <option value="devops">Dev Ops</option>
+          <option value="leader">Project Leader</option>
+          <option value="qa">QA</option>
+        </select>
+        <br>
+
+         <input type="submit" id="sendForm" name="sendForm" value="Wyslij" />
+        </form>
     </div>
+  <script src="script.js"></script>
   </body>
+
 </html>
+
