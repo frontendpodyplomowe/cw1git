@@ -61,10 +61,27 @@
         <label for="radio3">Wolę nie podawać</label>
 
         <br />
-  
-      <input type="submit" id="sendForm" name="sendForm" value="Wyslij" />
-    </form>
-  </div>
-</body>
+        <label class="description" id="title4" for="field4">
+          Ile masz lat doświadczenia?
+        </label>
+        <input
+          type="number"
+          id="field4"
+          name="field4"
+          value="3"
+          min="1"
+          max="5"
+        />
+        <br />
+        <label class="description" id="title-color" for="field-color">
+          Wybierz kolor profilu:
+        </label>
+        <input type="color" id="field-color" name="field-color" value="#000" />
+        <br />
+        <input type="submit" id="sendForm" name="sendForm" value="Wyslij" />
+      </form>
+    </div>
+  </body>
+
 </html>
 
