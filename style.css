@@ -14,3 +14,18 @@ input[type="text"] {
   background-color: yellow;
   border-radius: 3px;
 }
+
+input[type=submit] {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background-color: orange;
+}
